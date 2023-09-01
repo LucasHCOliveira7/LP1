@@ -51,13 +51,13 @@ public class exercicio_8 {
             		System.out.println(votosValidos + " eleitores tiveram votos validos");
             		System.out.println();
             		
-            		double percentualBrancos = (votosBrancos * 100.0) / totalEleitores;
-                    double percentualNulos = (votosNulos * 100.0) / totalEleitores;
-                    double percentualValidos = (votosValidos * 100.0) / totalEleitores;
+            		double percBrancos = (votosBrancos * 100.0) / totalEleitores;
+                    double percNulos = (votosNulos * 100.0) / totalEleitores;
+                    double percValidos = (votosValidos * 100.0) / totalEleitores;
                     
-                    System.out.printf("Percentual de votos brancos: %.2f\n", percentualBrancos, " %");
-                    System.out.printf("Percentual de votos nulos: %.2f\n", percentualNulos, " %");
-                    System.out.printf("Percentual de votos válidos: %.2f\n", percentualValidos, " %");
+                    System.out.printf("Percentual de votos brancos: %.2f\n", percBrancos, " %");
+                    System.out.printf("Percentual de votos nulos: %.2f\n", percNulos, " %");
+                    System.out.printf("Percentual de votos válidos: %.2f\n", percValidos, " %");
                     
                     restoVotos = restoVotos - votosValidos;
             	}

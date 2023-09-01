@@ -18,8 +18,7 @@ public class exercicio_2a {
 		// B recebe o novo valor de 5
 		// Mostra no console o valor de A e B
 		
-		int A;
-		int B;
+		int A, B = 0;
 		
 		A = 10;
 		B = 20;

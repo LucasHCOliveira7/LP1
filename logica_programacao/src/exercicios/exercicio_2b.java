@@ -24,9 +24,7 @@ public class exercicio_2b {
 		// C é a soma de A + B
 		// Mostra no console o valor de A, B e C
 		
-		int A;
-		int B;
-		int C;
+		int A, B, C = 0;
 		
 		A = 30;
 		B = 20;

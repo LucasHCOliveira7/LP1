@@ -22,9 +22,7 @@ public class exercicio_2f {
 		// Y é a soma de X + Z
 		// Mostra no console o valor de X, Y e Z
 		
-		int X;
-		int Y;
-		int Z;
+		int X, Y, Z = 0;
 		
 		X = 1;
 		Y = 2;

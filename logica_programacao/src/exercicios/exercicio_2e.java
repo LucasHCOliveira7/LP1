@@ -20,9 +20,7 @@ public class exercicio_2e {
 		// A recebe o novo valor de 10
 		// Mostra no console o valor de A, B e C
 		
-		int A;
-		int B;
-		int C;
+		int A, B, C = 0;
 		
 		A = 10;
 		B = 5;

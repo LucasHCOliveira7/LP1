@@ -22,8 +22,7 @@ public class exercicio_2d {
 		// A recebe o valor de B + 1
 		// Mostra no console o valor de A e B
 		
-		int A;
-		int B;
+		int A, B = 0;
 		
 		A = 10;
 		B = A + 1;

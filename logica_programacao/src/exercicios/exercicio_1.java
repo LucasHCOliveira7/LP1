@@ -11,9 +11,7 @@ public class exercicio_1 {
 		nas variáveis.
 		*/
 
-		int A; 
-		int B; 
-		int x; 
+		int A, B, x = 0; 
 		
 		A = 10;
 		B = 20;

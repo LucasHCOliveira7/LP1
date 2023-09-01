@@ -18,7 +18,7 @@ public class exercicio_9 {
 		double percentual = leitura.nextDouble();
 		
 		double reajuste = salarioAtual + ((salarioAtual * percentual) / 100);
-		System.out.println("O valor do salário reajustado é de R$ " + reajuste);
+		System.out.printf("O valor do salário reajustado é de R$ %.2f", reajuste);
 		
 	}
 
