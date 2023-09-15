@@ -29,7 +29,7 @@ public class exercicio_11 {
 		double salarioFinal = 0;
 		salarioFinal = salario + comissao + vendasFunc;
 		System.out.printf("O salário final do funcionário é de R$ %.2f", salarioFinal);
-		
+		  
 	}
 
 }
