@@ -30,6 +30,7 @@ public class exercicio_78 {
         boolean encontrou = false;
         
         for (String nome : nomes) {
+        	// equalsIgnoreCase = ignora caractere maiúsculo
             if (nome.equalsIgnoreCase(nomeBuscado)) {
                 encontrou = true;
                 break;
