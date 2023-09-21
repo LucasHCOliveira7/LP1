@@ -33,6 +33,11 @@ public class exercicio_48 {
 			
 		System.out.printf("A média do aluno foi %.2f", media);
 		
+		System.out.println("NOVO CÁLCULO? (S/N) ");
+		String novoCalc = scan.next();
+		
+		while (novoCalc == "S" || novoCalc == "s")
+		
 		scan.close();
 		
 	}
