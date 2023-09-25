@@ -1,5 +1,6 @@
 package exercicios;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class exercicio_63 {
@@ -23,6 +24,7 @@ public class exercicio_63 {
 		System.out.println("A soma dos números lidos é " + soma);
 		
 		scan.close();
+		
 	}
 
 }
