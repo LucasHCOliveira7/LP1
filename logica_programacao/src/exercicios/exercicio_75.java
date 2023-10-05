@@ -12,7 +12,14 @@ public class exercicio_75 {
         
         while (primeiroNumero <= 10) {
             System.out.print("(" + primeiroNumero + ", ");
-            
+            for (int i = 1; i <= 10; i++) {
+                System.out.print(i);
+                if (i < 10) {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println(")");
+            primeiroNumero++;
         }
 		
 	}
