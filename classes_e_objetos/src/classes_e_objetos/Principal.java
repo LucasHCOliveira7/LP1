@@ -4,150 +4,111 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		Caneta c1 = new Caneta();
-		c1.modelo = "Esferográfica";
-		c1.cor = "Azul";
-		c1.ponta = 0.8;
-		c1.carga = 80;
-		c1.tampar();
-		c1.status();
-		c1.tracos();
-		c1.escrever();
+		System.out.println("");
+		System.out.println("==================================================");
+		System.out.println("");
+		
+		Caneta caneta1 = new Caneta(null, null, 0, 0, false);
+		caneta1.setModelo("Esferográfica");
+		caneta1.setCor("Azul");
+		caneta1.setPonta(0.8);
+		caneta1.setCarga(80);
+		caneta1.tampar();
+		caneta1.status();
+		caneta1.tracos();
+		caneta1.escrever();
 		
 		System.out.println("");
 		System.out.println("==================================================");
 		System.out.println("");
 		
-		Carro car1 = new Carro();
-		car1.marca = "Dodge";
-		car1.modelo = "Charger RT";
-		car1.ano = 1970;
-		car1.cor = "Preto";
-		car1.placa = "BRA2X87";
-		car1.preco = 375000;
-		car1.velocidade = 110;
-		car1.status();
-		car1.andando();
-		car1.levarMulta();
+		Carro carro1 = new Carro(null, null, 0, null, null, 0, 0);
+		carro1.setMarca("Dodge");
+		carro1.setModelo("Charger R/T");
+		carro1.setAno(1970);
+		carro1.setCor("Preto");
+		carro1.setPlaca("BRA2X87");
+		carro1.setPreco(375000);
+		carro1.setVelocidade(130);
+		carro1.status();
+		carro1.andando();
+		carro1.levarMulta();
 		
 		System.out.println("");
 		System.out.println("==================================================");
 		System.out.println("");
 		
-		Pessoa p1 = new Pessoa();
-		p1.nome = "Lucas Henrique";
-		p1.idade = 21;
-		p1.cor = "branca";
-		p1.altura = 1.86;
-		p1.peso = 90.7;
-		p1.nacionalidade = "Brasileiro";
-		p1.telefone = "(12) 98765-4321";
-		p1.rg = "123.456.789-X";
-		p1.cpf = "987.654.321-00";
-		p1.status();
-		p1.trabalhar();
-		p1.treinar();
+		Pessoa pessoa1 = new Pessoa(null, null, null, null, 0, 0, 0, null, null);
+		pessoa1.setNome("Lucas Henrique");
+		pessoa1.setIdade(21);
+		pessoa1.setCor("branca");
+		pessoa1.setAltura(1.86);
+		pessoa1.setPeso(90.7);
+		pessoa1.setNacionalidade("Brasileiro");
+		pessoa1.setTelefone("(12) 98765-4321");
+		pessoa1.setRg("123.456.789-X");
+		pessoa1.setCpf("987.654.321-00");
+		pessoa1.status();
+		pessoa1.trabalhar();
+		pessoa1.treinar();
 		
 		System.out.println("");
 		System.out.println("==================================================");
 		System.out.println("");
 		
-		Filme f1 = new Filme();
-		f1.titulo = "Top Gun Maverick";
-		f1.duracao = 131;
-		f1.anoLancamento = 2022;
-		f1.genero = "Ação/Aventura";
-		f1.classificacao = "12";
-		f1.avaliacao = 9.5;
-		f1.sinopse = "Depois de mais de 30 anos de serviço como um dos principais aviadores da Marinha, \n"
+		Filme filme1 = new Filme(null, null, null, 0, 0, null, null, 0);
+		filme1.setTitulo("Top Gun Maverick");
+		filme1.setDuracao(131);
+		filme1.setAnoLancamento(2022);
+		filme1.setGenero("Ação/Aventura");
+		filme1.setClassificacao("12");
+		filme1.setAvaliacao(9.5);
+		filme1.setSinopse("Depois de mais de 30 anos de serviço como um dos principais aviadores da Marinha, \n"
 				+ "Pete \"Maverick\" Mitchell está de volta, rompendo os limites como um piloto de testes corajoso. \n"
 				+ "No mundo contemporâneo das guerras tecnológicas, Maverick enfrenta drones e prova que o \n"
-				+ "fator humano ainda é essencial.";
-		f1.diretor = "Joseph Kosinski";
-		f1.status();
-		f1.assistir();
-		f1.acessar();
-		f1.avaliar();
-		
-		System.out.println("");
+				+ "fator humano ainda é essencial.");
+		filme1.setDiretor("Joseph Kosinski");
+		filme1.status();
+		filme1.assistir();
+		filme1.acessar();
+		filme1.avaliar();
+        
+        System.out.println("");
 		System.out.println("==================================================");
 		System.out.println("");
 		
-        Personagem jogador1 = new Personagem();
-        jogador1.nome = "Jogador 1";
-        jogador1.vida = 100;
-        jogador1.energia = 50;
-        jogador1.nivel = 26;
-        jogador1.ataque = 35;
-        jogador1.defesa = 18;
-        
-        Personagem jogador2 = new Personagem();
-        jogador2.nome = "Jogador 2";
-        jogador2.vida = 100;
-        jogador2.energia = 50;
-        jogador2.nivel = 22;
-        jogador2.ataque = 21;
-        jogador2.defesa = 13;
-
-        System.out.println("STATUS INICIAL");
-        jogador1.Status();
-        System.out.println("");
-        jogador2.Status();
-
-        // Combate dos jogadores
-        System.out.println("\nCOMBATE");
-        jogador1.adicionarHabilidade("Bola de Fogo");
-        jogador2.adicionarHabilidade("Relâmpago");
-        jogador1.atacar(jogador2);
-        jogador1.ganharExperiencia(14);
-        jogador2.atacar(jogador1);
-        jogador2.ganharExperiencia(2);
-        jogador1.usarHabilidade(0);
-        jogador2.subtrairVida(15);
-        System.out.println("Jogador 2 perdeu 15 pontos de vida");
-        jogador1.ganharExperiencia(7);
-        jogador2.usarHabilidade(0);
-        jogador1.subtrairVida(31);
-        System.out.println("Jogador 1 perdeu 31 pontos de vida");
-        jogador2.ganharExperiencia(17);
-        jogador2.defender();
-        jogador1.atacar(jogador2);
-        jogador1.ganharExperiencia(6);
-        jogador2.atacar(jogador1);
-        jogador2.ganharExperiencia(2);
-        jogador1.atacar(jogador2);
-        jogador1.ganharExperiencia(6);
-        jogador2.usarHabilidade(0);
-        jogador1.subtrairVida(31);
-        System.out.println("Jogador 1 perdeu 31 pontos de vida");
-        jogador2.ganharExperiencia(17);
-        jogador1.defender();
-        jogador2.atacar(jogador1);
-        jogador1.recuperarVida(10);
-        System.out.println("Jogador 1 utilizou 25 pontos de experiência para recuperar vida");
-        jogador2.adicionarHabilidade("Ataque Especial");
-        jogador1.atacar(jogador2);
-        jogador2.usarHabilidade(1);
-        jogador1.subtrairVida(40);
-        System.out.println("Jogador 1 perdeu 40 pontos de vida");
-        jogador1.defender();
-        jogador2.usarHabilidade(0);
-        jogador1.subtrairVida(40);
-        System.out.println("Jogador 1 perdeu 40 pontos de vida");
-        jogador1.subtrairVida(0);
-        System.out.println("VITÓRIA DO JOGADOR 2");
-        jogador2.subirNivel();
-
-        // Status após o combate
-        System.out.println("\nSTATUS APÓS COMBATE");
-        jogador1.Status();
-        System.out.println("");
-        jogador2.Status();
+		System.out.println("LIVROS DA BIBLIOTECA");
 		
-        
-        System.out.println("");
+		Biblioteca biblioteca = new Biblioteca();
+		biblioteca.cadastrarLivro("O Senhor dos Anéis", "J. R. R. Tolkien", 1954);
+		biblioteca.cadastrarLivro("O Hobbit", "J. R. R. Tolkien", 1937);
+		biblioteca.cadastrarLivro("Jogador Número 1", "Ernest Cline", 2011);
+		biblioteca.cadastrarLivro("1984", "George Orwell", 1949);
+		biblioteca.cadastrarLivro("A Revolução dos Bichos", "George Orwell", 1945);
+		biblioteca.cadastrarLivro("O Pequeno Príncipe", "Antoine de Saint-Exupéry", 1943);
+		biblioteca.cadastrarLivro("Cristianismo Puro e Simples", "C. S. Lewis", 1952);
+		biblioteca.cadastrarLivro("A Abolição do Homem", "C. S. Lewis", 1943);
+		biblioteca.cadastrarLivro("Harry Potter e a Pedra Filosofal", "J. K. Rowling", 1997);
+		biblioteca.cadastrarLivro("Harry Potter e a Câmara Secreta", "J. K. Rowling", 1998);
+		biblioteca.cadastrarLivro("Harry Potter e o Prisioneiro de Azkaban", "J. K. Rowling", 1999);
+		biblioteca.cadastrarLivro("Harry Potter e o Cálice de Fogo", "J. K. Rowling", 2000);
+		biblioteca.cadastrarLivro("Harry Potter e a Ordem da Fênix", "J. K. Rowling", 2003);
+		biblioteca.cadastrarLivro("Harry Potter e o Enigma do Príncipe", "J. K. Rowling", 2005);
+		biblioteca.cadastrarLivro("Harry Potter e as Relíquias da Morte", "J. K. Rowling", 2007);
+		
+		biblioteca.mostrarLivros();
+		
+		System.out.println();
+		System.out.println("LIVROS REMOVIDOS");
+		
+		biblioteca.removerLivro("Harry Potter e o Prisioneiro de Azkaban");
+		biblioteca.removerLivro("Jogador Número 1");
+		biblioteca.removerLivro("O Pequeno Príncipe");
+		
+		biblioteca.mostrarLivros();
+		
+		System.out.println("");
 		System.out.println("==================================================");
 		System.out.println("");
 	}
-
 }

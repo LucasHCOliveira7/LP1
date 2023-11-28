@@ -2,16 +2,91 @@ package classes_e_objetos;
 
 public class Filme {
 
-	String titulo;
-	String genero;
-	String diretor;
-	int anoLancamento;
-	int duracao;
-	String classificacao;
-	String sinopse;
-	double avaliacao;
+	private String titulo;
+	private String genero;
+	private String diretor;
+	private int anoLancamento;
+	private int duracao;
+	private String classificacao;
+	private String sinopse;
+	private double avaliacao;
 	
-	void status() {
+	public Filme(String titulo, String genero, String diretor, int anoLancamento, int duracao, String classificacao, String sinopse, double avaliacao) {
+		this.titulo = titulo;
+		this.genero = genero;
+		this.diretor = diretor;
+		this.anoLancamento = anoLancamento;
+		this.duracao = duracao;
+		this.classificacao = classificacao;
+		this.sinopse = sinopse;
+		this.avaliacao = avaliacao;
+	}
+
+	public String getTitulo() {
+		return titulo;
+	}
+	
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	
+	public String getGenero() {
+		return genero;
+	}
+	
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+	
+	public String getDiretor() {
+		return diretor;
+	}
+	
+	public void setDiretor(String diretor) {
+		this.diretor = diretor;
+	}
+	
+	public int getAnoLancamento() {
+		return anoLancamento;
+	}
+	
+	public void setAnoLancamento(int anoLancamento) {
+		this.anoLancamento = anoLancamento;
+	}
+	
+	public int getDuracao() {
+		return duracao;
+	}
+	
+	public void setDuracao(int duracao) {
+		this.duracao = duracao;
+	}
+	
+	public String getClassificacao() {
+		return classificacao;
+	}
+	
+	public void setClassificacao(String classificacao) {
+		this.classificacao = classificacao;
+	}
+	
+	public String getSinopse() {
+		return sinopse;
+	}
+	
+	public void setSinopse(String sinopse) {
+		this.sinopse = sinopse;
+	}
+	
+	public double getAvaliacao() {
+		return avaliacao;
+	}
+	
+	public void setAvaliacao(double avaliacao) {
+		this.avaliacao = avaliacao;
+	}
+	
+	public void status() {
 		System.out.println("INFORMAÇÕES DO FILME");
 		System.out.println("Título: " + this.titulo);
 		System.out.println("Duração: " + this.duracao + "min");
@@ -23,7 +98,7 @@ public class Filme {
 		System.out.println("Diretor: " + this.diretor);
 	}
 	
-	void assistir() {
+	public void assistir() {
 		if (anoLancamento > 2023) {
 			System.out.println("Esse filme ainda não está disponível para assistir!");
 		} else {
@@ -31,7 +106,7 @@ public class Filme {
 		}
 	}
 	
-	void acessar() {
+	public void acessar() {
 		if (classificacao == "18") {
 			System.out.println("Esse filme possui conteúdo violento e sexual extremos. Cenas de sexo, incesto \n"
 					+ "ou atos repetidos de tortura, mutilação ou abuso sexual.");
@@ -52,7 +127,7 @@ public class Filme {
 		}
 	}
 	
-	void avaliar() {
+	public void avaliar() {
 		if (avaliacao >= 8) {
 			System.out.println("O filme recebou uma ótima avaliação");
 		} else if (avaliacao >= 6) {
